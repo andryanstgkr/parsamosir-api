@@ -1,0 +1,764 @@
+{
+	"info": {
+		"_postman_id": "1231c7f4-e86e-4e0f-9a1c-bd0cdf148205",
+		"name": "Parsamosir",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "District",
+			"item": [
+				{
+					"name": "GET-ALL-DISTRICTS",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic YW5kcnlhbjpwYXNzd29yZA==",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:1991/api/admin/district/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1991",
+							"path": [
+								"api",
+								"admin",
+								"district",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET-ALL-REGENCIES",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic YW5kcnlhbjpwYXNzd29yZA==",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:1991/api/admin/regencies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1991",
+							"path": [
+								"api",
+								"admin",
+								"regencies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET-DISTRICT-BY-ID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic YW5kcnlhbjpwYXNzd29yZA==",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:1991/api/admin/district/id/151d92a0-2d3c-4faf-af9c-c725428b2687",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1991",
+							"path": [
+								"api",
+								"admin",
+								"district",
+								"id",
+								"151d92a0-2d3c-4faf-af9c-c725428b2687"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET-DISTRICT-WITH-PAGINATION",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic YW5kcnlhbjpwYXNzd29yZA==",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:1991/api/admin/district/page/pageNo=1&pageSize=10&SortBy=name&SortType=ASC",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1991",
+							"path": [
+								"api",
+								"admin",
+								"district",
+								"page",
+								"pageNo=1&pageSize=10&SortBy=name&SortType=ASC"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SAVE-DISTRICT",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic YW5kcnlhbjpwYXNzd29yZA==",
+								"type": "text"
+							},
+							{
+								"key": "XSRF-TOKEN",
+								"value": "63c5b619-87a3-4133-bd48-dad308552472",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Sitio-tio\",\n    \"regencyId\": \"a4719a68-d7e1-41a0-b929-71d6cca1a038\",\n    \"createdBy\": \"Andryan\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1991/api/admin/saveDistrict",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1991",
+							"path": [
+								"api",
+								"admin",
+								"saveDistrict"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE-DISTRICT",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic YW5kcnlhbjpwYXNzd29yZA==",
+								"type": "text"
+							},
+							{
+								"key": "XSRF-TOKEN",
+								"value": "63c5b619-87a3-4133-bd48-dad308552472",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Nainggolan\",\n    \"regencyId\": \"a4719a68-d7e1-41a0-b929-71d6cca1a038\",\n    \"createdBy\": \"Andryan\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1991/api/admin/district/update/151d92a0-2d3c-4faf-af9c-c725428b2687",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1991",
+							"path": [
+								"api",
+								"admin",
+								"district",
+								"update",
+								"151d92a0-2d3c-4faf-af9c-c725428b2687"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Villages",
+			"item": [
+				{
+					"name": "GET-ALL-VILLAGES",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1991/api/admin/village/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1991",
+							"path": [
+								"api",
+								"admin",
+								"village",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET-VILLAGE-WITH-PAGINATION",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic YW5kcnlhbjpwYXNzd29yZA==",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:1991/api/admin/village/page/pageNo=3&pageSize=10&SortBy=name&SortType=ASC",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1991",
+							"path": [
+								"api",
+								"admin",
+								"village",
+								"page",
+								"pageNo=3&pageSize=10&SortBy=name&SortType=ASC"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET-VILLAGE-WITH-PAGINATION-BY-DISCTRICT Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic YW5kcnlhbjpwYXNzd29yZA==",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:1991/api/admin/village/page/districtId=fcc7eb17-3827-4806-9b8b-449209406b62&pageNo=3&pageSize=10&SortBy=name&SortType=ASC",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1991",
+							"path": [
+								"api",
+								"admin",
+								"village",
+								"page",
+								"districtId=fcc7eb17-3827-4806-9b8b-449209406b62&pageNo=3&pageSize=10&SortBy=name&SortType=ASC"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET-VILLAGE-BY-ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1991/api/admin/village/id/dfa80259-1642-4b17-9709-af1219ec7687",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1991",
+							"path": [
+								"api",
+								"admin",
+								"village",
+								"id",
+								"dfa80259-1642-4b17-9709-af1219ec7687"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE-VILLAGE",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"isActive\": true,\n        \"isDeleted\": false,\n        \"name\": \"Pea Jolo8\",\n        \"type\": \"D\",\n        \"district\": {\n            \"id\": \"31281d2c-3966-4f34-9407-3517c18467e9\",\n            \"createdDate\": \"2021-07-03T23:59:54\",\n            \"updatedDate\": \"2021-07-03T23:59:54\",\n            \"updatedBy\": \"Admin\",\n            \"createdBy\": \"Andryan\",\n            \"isActive\": true,\n            \"isDeleted\": false,\n            \"name\": \"Simanindo\",\n            \"regency\": {\n                \"id\": \"a4719a68-d7e1-41a0-b929-71d6cca1a038\",\n                \"createdDate\": \"2021-07-03T23:58:08\",\n                \"updatedDate\": \"2021-07-03T23:58:08\",\n                \"updatedBy\": \"Andryan\",\n                \"createdBy\": \"Admin\",\n                \"isActive\": true,\n                \"isDeleted\": false,\n                \"name\": \"Samosir\"\n            }\n        }\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1991/api/admin/village/update/ca2e57e6-983d-45a4-bc95-0b953e6333d7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1991",
+							"path": [
+								"api",
+								"admin",
+								"village",
+								"update",
+								"ca2e57e6-983d-45a4-bc95-0b953e6333d7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE-VILLAGE",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"isActive\": true,\n        \"isDeleted\": false,\n        \"name\": \"Pea Jolo\",\n        \"type\": \"D\",\n        \"district\": {\n            \"id\": \"31281d2c-3966-4f34-9407-3517c18467e9\",\n            \"createdDate\": \"2021-07-03T23:59:54\",\n            \"updatedDate\": \"2021-07-03T23:59:54\",\n            \"updatedBy\": \"Admin\",\n            \"createdBy\": \"Andryan\",\n            \"isActive\": true,\n            \"isDeleted\": false,\n            \"name\": \"Simanindo\",\n            \"regency\": {\n                \"id\": \"a4719a68-d7e1-41a0-b929-71d6cca1a038\",\n                \"createdDate\": \"2021-07-03T23:58:08\",\n                \"updatedDate\": \"2021-07-03T23:58:08\",\n                \"updatedBy\": \"Andryan\",\n                \"createdBy\": \"Admin\",\n                \"isActive\": true,\n                \"isDeleted\": false,\n                \"name\": \"Samosir\"\n            }\n        }\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1991/api/admin/village/delete/ca2e57e6-983d-45a4-bc95-0b953e6333d7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1991",
+							"path": [
+								"api",
+								"admin",
+								"village",
+								"delete",
+								"ca2e57e6-983d-45a4-bc95-0b953e6333d7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SAVE-VILLAGE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Sijambur\",\n    \"type\" : \"D\",\n    \"district\": {\n        \"id\": \"ae8b09fc-3e9f-46c8-86f4-c0ef8a531fcd\",\n        \"createdDate\": \"2021-07-10T15:53:32\",\n        \"updatedDate\": \"2021-07-10T15:53:32\",\n        \"updatedBy\": \"Admin\",\n        \"createdBy\": \"Andryan\",\n        \"isActive\": true,\n        \"isDeleted\": false,\n        \"name\": \"Sitio-tio\",\n        \"regency\": {\n            \"id\": \"a4719a68-d7e1-41a0-b929-71d6cca1a038\",\n            \"createdDate\": \"2021-07-03T23:58:08\",\n            \"updatedDate\": \"2021-07-11T21:42:58\",\n            \"updatedBy\": \"Andryan\",\n            \"createdBy\": \"Admin\",\n            \"isActive\": true,\n            \"isDeleted\": false,\n            \"name\": \"Samosir 3.0\"\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1991/api/admin/village/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1991",
+							"path": [
+								"api",
+								"admin",
+								"village",
+								"save"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Regency",
+			"item": [
+				{
+					"name": "UPDATE-REGENCY",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"isActive\": true,\n    \"isDeleted\": false,\n    \"name\": \"Samosir 3.0\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1991/api/admin/regency/update/a4719a68-d7e1-41a0-b929-71d6cca1a038",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1991",
+							"path": [
+								"api",
+								"admin",
+								"regency",
+								"update",
+								"a4719a68-d7e1-41a0-b929-71d6cca1a038"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET-ALL-REGENCIES",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1991/api/regency/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1991",
+							"path": [
+								"api",
+								"regency",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET-REGENCY-BY-ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1991/api/admin/regency/id/a4719a68-d7e1-41a0-b929-71d6cca1a038",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1991",
+							"path": [
+								"api",
+								"admin",
+								"regency",
+								"id",
+								"a4719a68-d7e1-41a0-b929-71d6cca1a038"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE-REGENCY",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1991/api/admin/regency/delete/f3a79291-01af-4279-9e7e-1e1514ae2dbd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1991",
+							"path": [
+								"api",
+								"admin",
+								"regency",
+								"delete",
+								"f3a79291-01af-4279-9e7e-1e1514ae2dbd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SAVE-REGENCY",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Samosir 4.0\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1991/api/admin/regency/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1991",
+							"path": [
+								"api",
+								"admin",
+								"regency",
+								"save"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ActivityLog",
+			"item": [
+				{
+					"name": "GET-ACTIVITY-LOG",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1991/api/activitylog/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1991",
+							"path": [
+								"api",
+								"activitylog",
+								"all"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
