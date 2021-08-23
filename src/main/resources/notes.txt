@@ -1,0 +1,8 @@
+Consider defining a bean of type 'service' in your configuration [Spring boot]
+https://stackoverflow.com/questions/41663652/consider-defining-a-bean-of-type-service-in-your-configuration-spring-boot
+
+Unable to access Controller
+https://stackoverflow.com/questions/45183875/spring-boot-controller-not-mapping
+
+@ToMany = FetchType.Lazy
+@ToOne = FetchType.One
